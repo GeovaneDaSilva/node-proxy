@@ -1,0 +1,9 @@
+process.env.SERVER_PORT = process.env.SERVER_PORT || 5000;
+process.env.PORT = process.env.PORT || 5000;
+process.env.SERVER_HOST = 'localhost';
+process.env.SOCKET_PROXY_SECRET = process.env.SOCKET_PROXY_SECRET || 'b4a006d17ffa123605a2425071034ff56d7f74b576ed55aee0a5f807579f71933fb4d026e8f9a64ad73e4a639c485f8dbe0158dc2c6ae511808bff14a4513300';
+process.env.REDIS_URL = process.env.REDIS_URL || 'redis://127.0.0.1:6379/0';
+process.env.HEROKU_REDIS_RED_URL = process.env.HEROKU_REDIS_RED_URL || 'redis://127.0.0.1:6379/0'
+process.env.ACCESS_TOKEN = process.env.ACCESS_TOKEN || '546A576E5A7234743777217A25432A462D4A614E645267556B58703273357638'
+// process.env.URL_HEARTBEAT = process.env.URL_HEARTBEAT || 'https://device-heartbeat-service-eu.herokuapp.com/api/devices'
+process.env.URL_HEARTBEAT = process.env.URL_HEARTBEAT || 'https://device-heartbeat-service-stage.herokuapp.com/api/devices'

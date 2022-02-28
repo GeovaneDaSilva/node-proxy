@@ -1,0 +1,6 @@
+{
+    "singleQuote": true,
+    "no-useless-escape": false,
+    "prettier/prettier": false,
+    "prefer-const": true
+    }

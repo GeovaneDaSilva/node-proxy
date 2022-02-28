@@ -1,0 +1,21 @@
+version: '3'
+services:
+  redis:
+    stop_grace_period: 10s
+    image: redis
+    ports:
+      - "6666:6379"
+      - "127.0.0.1:6379:6379"
+  node-socket-proxy:
+    stop_grace_period: 10s
+    image: rocketcyber/node_socket_proxy:latest 
+    ports:
+      - '5000:3000'
+    depends_on:
+      - redis
+    environment:
+    #  - SOCKET_PROXY_SECRET
+      - REDIS_URL=redis://redis:6379/0
+      - HEROKU_REDIS_RED_URL=redis://redis:6379/0
+      - ACCESS_TOKEN=dba0abf2d9cd94bc35541b32388f61858e200d1c656a3b84fce2dd66d0331411
+    
