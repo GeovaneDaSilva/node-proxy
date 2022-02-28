@@ -35,7 +35,7 @@ message received from server: `ready`
 
 ## Test Agent Browser
 7. To send events to the server you need to download the agent from this repository: 
-https://github.com/gdasilvarocketcyber/agent-websockets-test .
+https://github.com/GeovaneDaSilva/agent-websockets-test .
 
 
 ## Authentication:
